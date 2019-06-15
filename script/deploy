@@ -1,9 +1,17 @@
 #!/bin/sh
-
 # for deploying on AWS
 
-docker build ./nginx/ -t mjdall_lb
+# stop and remove any running containers
+./script/down
 
-LOG_DIR=$(pwd)/nginx_logs/
+docker build . -t mjdall_site
 
-docker run -v "$LOG_DIR":/var/log/nginx/ -p 80:80 -d mjdall_lb
+NGINX_LOG_DIR=$(pwd)/nginx_logs/
+
+# start the ui container
+docker run \
+    --name mjdall_site \
+    -v "$NGINX_LOG_DIR":/var/log/nginx/ \
+    -p 80:80 \
+    -d \
+    mjdall_site

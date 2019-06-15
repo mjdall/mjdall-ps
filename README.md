@@ -3,11 +3,13 @@
 Small personal static site. I currently don't have much to show for what I can do web development wise. This is going to be that project where I can show partially some of my web development skills. Since it's not a project with any requirements per say, I'm just going to wing it, not care all too much about commit standards but just enjoy a small little project.
 
 ## Where is this deployed?
-Planning on hosting at mjdall.com. Will update once actually deployed.
+Hosted at [mjdall.com](http://mjdall.com)
 
 ## Scripts
 All commands are run through npm, the commands are explained below. Call with `npm run <command>`.
 * `build` - Builds the repository for static serving.
+* `deploy` - For building and hosting via a docker container. Will be hosted on localhost (without specifying a port).
+    * Also used to deploy and host on AWS.
 * `develop` - Runs the repositroy for local testing - gatsby has hot reloading.
 * `format` - Runs formatting on all javascript and react files in the repository.
 * `start` - Justs runs develop at this stage.
@@ -26,6 +28,10 @@ All commands are run through npm, the commands are explained below. Call with `n
 * Make a little logo for favicon and home button
 * Thinking of opting out of boostrap to try and style my own components
     * Mainly so I can learn a bit more CSS than just relying on bootstrap theme + components.
+* Dockerize dev deployment so that it hot reloads
+    * ./script/deploy -p
+* Make it routable locally without going to localhost:8000
+* Look into hosting via an s3 bucket
 
 ## Framework Planning
 * [Next JS](https://nextjs.org/)

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set +e
+
+docker stop mjdall_lb
+docker rm mjdall_lb
+
+docker stop mjdall_site
+docker rm mjdall_site

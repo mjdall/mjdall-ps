@@ -33,10 +33,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "deploy": "./script/deploy",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve -H 0.0.0.0"
   },
   "repository": {
     "type": "git",
