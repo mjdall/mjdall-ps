@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# for deploying on AWS
+
+docker build ./nginx/ -t mjdall_lb
+
+LOG_DIR=$(pwd)/nginx_logs/
+
+docker run -v "$LOG_DIR":/var/log/nginx/ -p 80:80 -d mjdall_lb

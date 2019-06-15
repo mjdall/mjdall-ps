@@ -1,0 +1,48 @@
+#!/bin/sh
+# Run as ``./script/bootstrap`
+
+DOCKER_VERSION="18.09.5-0ubuntu1"
+NODE_VERSION="v10.15.3"
+NVM_VERSION="v0.34.0"
+
+install_docker() {
+    sudo apt-get update
+
+    # incase any current installations exist
+    sudo apt-get remove docker docker-engine docker.io
+
+    sudo apt install -y --no-install-recommends \
+    docker.io # ="$DOCKER_VERSION" todo get the package version correct
+
+    sudo systemctl start docker
+    sudo systemctl enable docker
+
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+
+    echo "logout and back in to use docker without sudo"
+}
+
+install_nvm() {
+    # install nvm
+    curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/"$NVM_VERSION"/install.sh" | bash
+
+    # need to be able to use nvm right away
+    export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+    # built on 10.15.3
+    nvm install "$NODE_VERSION"
+}
+
+# make sure this is run as root
+if [ ! "$EUID"=0 ]; then
+    echo "run with sudo, need to install apt packages"
+    exit 1
+fi
+
+install_docker
+install_nvm
+
+install node packages
+npm install
