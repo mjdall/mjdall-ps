@@ -1,15 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import Header from './Header'
+// import CenterWrapper from './Style/CenterWrapper'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,17 +18,15 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div 
+        <div
           style={{
-            paddingLeft: `25px`,
-            paddingRight: `25px`,
+            paddingLeft: `100px`,
+            paddingRight: `100px`,
           }}
         >
+          <Header siteTitle={data.site.siteMetadata.title} />
           <main>{children}</main>
-          <footer>
-            <a href="https://github.com/mjdall/mjdall-ps">GitHub</a>
-          </footer>
+          <a href="https://github.com/mjdall/mjdall-ps">GitHub</a>
         </div>
       </>
     )}

@@ -19,7 +19,7 @@ All commands are run through npm, the commands are explained below. Call with `n
 * Learn [TypeScript](https://www.typescriptlang.org/)
     * I've only really watched small talks about TS
     * I've been meaning to learn it for awhile
-    * Going to set up gatsby and then get familar with TS
+    * ~~Going to set up gatsby and then get familar with TS~~
 * Make the website jazzy
     * I've done a bit of css/scss animations, it's time to go overboard and learn a few more
 * Look into the Gatsby files I deleted
@@ -28,17 +28,19 @@ All commands are run through npm, the commands are explained below. Call with `n
 * Make a little logo for favicon and home button
 * Thinking of opting out of boostrap to try and style my own components
     * Mainly so I can learn a bit more CSS than just relying on bootstrap theme + components.
+    * Going to go with [Styled Components](https://www.styled-components.com)
+    * [Styled components talk](https://www.youtube.com/watch?v=pHHsSkkjQns)
 * Dockerize dev deployment so that it hot reloads
     * ./script/deploy -p
-* Make it routable locally without going to localhost:8000
+* ~~Make it routable locally without going to localhost:8000~~
 * Look into hosting via an s3 bucket
 
-## Framework Planning
-* [Next JS](https://nextjs.org/)
+## ~~Framework Planning~~
+* ~~[Next JS](https://nextjs.org/)~~
     * good for havging multiple pages on the site
     * i really want to learn this framework
     * i did start some boiler plate next js
-* [create-react-app](https://github.com/facebook/create-react-app)
+* ~~[create-react-app](https://github.com/facebook/create-react-app)~~
     * have a single page that doesn't have any other routes.
     * i'm kind of leaning in this direction, however I do want to use a different framework other than create-react-app
 * [Gatsby](https://www.gatsbyjs.org/) <- Actually used framework

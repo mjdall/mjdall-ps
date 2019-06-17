@@ -1,18 +1,22 @@
 import React from 'react'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/MainLayout'
+import SEO from '../components/SEO'
+import CenterWrapper from '../components/Style/CenterWrapper'
 
-import '../style/style.scss'
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <p className="main-text-header">hi, i'm morgan (classic)</p>
-    <p>
-      This site is a work in progress! Currently on the boilerplate stage of the site. Check back soon.
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <CenterWrapper>
+        <p style={{ fontSize: '7rem', marginBottom: '0px' }}>hi, i'm morgan</p>
+        <p>
+          This site is a work in progress! Currently on the boilerplate stage of
+          the site. Check back soon.
+        </p>
+      </CenterWrapper>
+    </Layout>
+  )
+}
 
 export default IndexPage
