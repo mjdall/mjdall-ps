@@ -41,13 +41,14 @@ ENV PATH="${NODE_PATH}:${PATH}"
 # COPY ./script/install_nvm ./script/
 # RUN ./script/install_nvm
 
-# copy the source files
-COPY ./src ./src
-COPY gatsby-config.js .
 COPY package.json .
 
 # install all of the node modules
 RUN npm install
+
+# copy the source files
+COPY ./src ./src
+COPY gatsby-config.js .
 
 # build it so we can host the server in prod
 RUN npm run build

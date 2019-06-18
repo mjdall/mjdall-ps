@@ -34,6 +34,9 @@ All commands are run through npm, the commands are explained below. Call with `n
     * ./script/deploy -p
 * ~~Make it routable locally without going to localhost:8000~~
 * Look into hosting via an s3 bucket
+* Figure out the best file structure for styled components
+* Figure out the main layout so it's designed for adding new pages
+* Fix the width and height being slighly too big
 
 ## ~~Framework Planning~~
 * ~~[Next JS](https://nextjs.org/)~~
@@ -49,3 +52,7 @@ All commands are run through npm, the commands are explained below. Call with `n
 
 ## Useful Links
 * [Gatsby Typography](https://www.gatsbyjs.org/docs/typography-js/) - Plugin for controlling fonts for the site.
+* Colours:
+    * Gunmetal - #292F36
+    * Magic Mint - #A1FCDF
+    * Plantinum - #E6E6EA
