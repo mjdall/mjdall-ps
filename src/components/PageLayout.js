@@ -4,8 +4,6 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import GlobalStyle from '../components/Style/GlobalStyle'
 import Header from './Header'
-import PaddedMainContainer from './Style/PaddedMainContainer'
-import VerticalAlignContainer from './Style/VerticalAlignContainer'
 import { ThemeProvider } from 'styled-components'
 
 const PageLayout = ({ children, theme }) => (
@@ -23,10 +21,10 @@ const PageLayout = ({ children, theme }) => (
       <>
         <GlobalStyle />
         <ThemeProvider theme={theme}>
-          <PaddedMainContainer>
+          <main>
             <Header siteTitle={data.site.siteMetadata.title} theme={theme} />
-            <VerticalAlignContainer>{children}</VerticalAlignContainer>
-          </PaddedMainContainer>
+            {children}
+          </main>
         </ThemeProvider>
       </>
     )}

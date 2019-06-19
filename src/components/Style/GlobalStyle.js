@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   body {
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
-    font-family: 'Roboto';
+    /* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
 
@@ -12,5 +12,4 @@ export default createGlobalStyle`
       font-size: 10px;
     }
   }
-
 `

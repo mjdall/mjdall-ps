@@ -48,6 +48,7 @@ All commands are run through npm, the commands are explained below. Call with `n
     * i'm kind of leaning in this direction, however I do want to use a different framework other than create-react-app
 * [Gatsby](https://www.gatsbyjs.org/) <- Actually used framework
     * quote from create-react-app: "If your website is mostly static (for example, a portfolio or a blog), consider using Gatsby instead."
+    * podcast I listen to ([Syntax](https://syntax.fm/)) has mentioned Gatsby quite a bit
     * going to go with Gatsby
 
 ## Useful Links
