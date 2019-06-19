@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
+import GlobalStyle from '../components/Style/GlobalStyle'
 import Header from './Header'
 import PaddedMainContainer from './Style/PaddedMainContainer'
 import VerticalAlignContainer from './Style/VerticalAlignContainer'
@@ -19,12 +20,15 @@ const PageLayout = ({ children, theme }) => (
       }
     `}
     render={data => (
-      <ThemeProvider theme={theme}>
-        <PaddedMainContainer>
-          <Header siteTitle={data.site.siteMetadata.title} theme={theme} />
-          <VerticalAlignContainer>{children}</VerticalAlignContainer>
-        </PaddedMainContainer>
-      </ThemeProvider>
+      <>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <PaddedMainContainer>
+            <Header siteTitle={data.site.siteMetadata.title} theme={theme} />
+            <VerticalAlignContainer>{children}</VerticalAlignContainer>
+          </PaddedMainContainer>
+        </ThemeProvider>
+      </>
     )}
   />
 )

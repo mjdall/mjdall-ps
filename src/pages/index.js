@@ -13,8 +13,8 @@ const landingTheme = {
 const IndexPage = () => {
   return (
     <PageLayout theme={landingTheme}>
-      <SEO title="Home" />
-      <HeaderText fontSize="7rem" inline thin>
+      <SEO title="mjdall" />
+      <HeaderText fontSize="7em" inline thin>
         hi, i'm morgan
       </HeaderText>
       <Text>
@@ -24,6 +24,9 @@ const IndexPage = () => {
       <Text>
         To gauge the progress of my site, you can check out the{' '}
         {<a href="https://github.com/mjdall/mjdall-ps">github</a>}
+      </Text>
+      <Text fontSize="0.9em">
+        <i>note: the page currently isn't being displayed properly in firefox</i>
       </Text>
     </PageLayout>
   )

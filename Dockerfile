@@ -37,10 +37,6 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.s
 ENV NODE_PATH $NVM_DIR/versions/node/$NODE_VERSION/bin/
 ENV PATH="${NODE_PATH}:${PATH}"
 
-# boostrap the container with nvm
-# COPY ./script/install_nvm ./script/
-# RUN ./script/install_nvm
-
 COPY package.json .
 
 # install all of the node modules

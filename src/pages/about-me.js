@@ -7,7 +7,9 @@ import HeaderText from '../components/Style/HeaderText'
 import Shrug from '../components/Style/Shrug'
 
 const aboutMeTheme = {
-  backgroundColour: '#F4F4F8',
+  backgroundColour: '#FE4A49',
+  headerFontColour: '#E6E6EA',
+  textFontColour: '#E6E6EA',
 }
 
 const AboutMe = () => (

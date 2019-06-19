@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 
 const defaults = {
-  fontSize: '2.5rem',
+  fontSize: '2.5em',
 }
 
 export default styled.h1`
   font-size: ${props => (props.fontSize ? props.fontSize : defaults.fontSize)};
-  padding-right: ${props => props.padRight && '1.5rem'};
   display: ${props => props.inline && 'inline-block'};
-  margin: ${props => props.removeMargins && '0'};
-  padding-bottom: ${props => props.padBottom && '0.25rem'};
+  margin: 0 !important;
 
-  font-weight: ${props => props.thin && '300'};
+  padding-right: ${props => props.padRight && '0.5em'};
+  padding-bottom: ${props => props.padBottom && '0.1em'};
+
+  font-weight: ${props => (props.thin ? '300' : '400')};
   font-family: ${props =>
     props.arial ? 'Arial' : props.theme.fontFamily && props.theme.fontFamily};
   color: ${props =>
