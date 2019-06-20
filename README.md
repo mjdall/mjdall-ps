@@ -37,6 +37,9 @@ All commands are run through npm, the commands are explained below. Call with `n
 * Figure out the best file structure for styled components
 * Figure out the main layout so it's designed for adding new pages
 * Fix the width and height being slighly too big
+* Write a blurb about myself
+* Actually have a proper landing page
+* Write a blog post about making a static site for AWS
 
 ## ~~Framework Planning~~
 * ~~[Next JS](https://nextjs.org/)~~
@@ -57,3 +60,5 @@ All commands are run through npm, the commands are explained below. Call with `n
     * Gunmetal - #292F36
     * Magic Mint - #A1FCDF
     * Plantinum - #E6E6EA
+    * Could be good if altered - [colours][https://coolors.co/ffc1cf-e8ffb7-e2a0ff-c4f5fc-b7ffd8]
+    * Jet Black - #353535

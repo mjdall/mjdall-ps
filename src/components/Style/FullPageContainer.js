@@ -21,20 +21,31 @@ const VerticalCenterDiv = styled.div`
   height: 100%;
   position: relative;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: ${props => (props.noVerticalAlign ? '' : 'middle')};
   text-align: center;
 `
 
-const FullPageContainer = ({ content, theme, dontCenterElements }) => (
-  <ThemeProvider theme={theme}>
-    <FullPageDiv>
-      {dontCenterElements ? (
-        content
-      ) : (
-        <VerticalCenterDiv>{content}</VerticalCenterDiv>
-      )}
-    </FullPageDiv>
-  </ThemeProvider>
-)
+const FullPageContainer = ({
+  content,
+  theme,
+  dontCenterElements,
+  noVerticalAlign,
+}) => {
+  const noVertAlign =
+    typeof noVerticalAlign === 'boolean' ? noVerticalAlign : false
+  return (
+    <ThemeProvider theme={theme}>
+      <FullPageDiv>
+        {dontCenterElements ? (
+          content
+        ) : (
+          <VerticalCenterDiv noVerticalAlign={noVertAlign}>
+            {content}
+          </VerticalCenterDiv>
+        )}
+      </FullPageDiv>
+    </ThemeProvider>
+  )
+}
 
 export default FullPageContainer

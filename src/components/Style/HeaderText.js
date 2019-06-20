@@ -10,7 +10,7 @@ export default styled.h1`
   margin: 0 !important;
 
   padding-right: ${props => props.padRight && '0.5em'};
-  padding-bottom: ${props => props.padBottom && '0.1em'};
+  padding-bottom: ${props => props.padBottom && '0.5em'};
 
   font-weight: ${props => (props.thin ? '300' : '400')};
   font-family: ${props =>
