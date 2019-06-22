@@ -7,8 +7,8 @@ import styled from 'styled-components'
 // ${props => props.height ? props.height : '200px'}
 const PicOfMe = (width, height, extraStyling) => {
   const ImageContainer = styled.div`
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 25vw;
     display: inline-block;
   `
 
@@ -32,7 +32,7 @@ const PicOfMe = (width, height, extraStyling) => {
         <ImageContainer width={width} height={height} style={addedStyle}>
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
-            style={{ borderRadius: '50%', border: '0.8vw solid #FFF' }}
+            style={{ borderRadius: '50%', border: '0.7vw solid #FFF' }}
           />
         </ImageContainer>
       )}

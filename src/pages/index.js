@@ -27,7 +27,10 @@ const FirstBlockContent = (
       {<a href="https://github.com/mjdall/mjdall-ps">github</a>}
     </Text>
     <Text fontSize="0.9em">
-      <i>note: the page currently isn't being displayed properly in firefox</i>
+      <i>
+        note: the page currently isn't being displayed properly in firefox, nor
+        is it mobile optimised
+      </i>
     </Text>
   </>
 )

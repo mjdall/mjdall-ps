@@ -40,6 +40,8 @@ All commands are run through npm, the commands are explained below. Call with `n
 * Write a blurb about myself
 * Actually have a proper landing page
 * Write a blog post about making a static site for AWS
+* Switch the theme to use a react context
+* Scale font according to screensize
 
 ## ~~Framework Planning~~
 * ~~[Next JS](https://nextjs.org/)~~
