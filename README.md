@@ -22,26 +22,27 @@ All commands are run through npm, the commands are explained below. Call with `n
     * ~~Going to set up gatsby and then get familar with TS~~
 * Make the website jazzy
     * I've done a bit of css/scss animations, it's time to go overboard and learn a few more
-* Look into the Gatsby files I deleted
-    * [Server side rendering](https://www.gatsbyjs.org/docs/ssr-apis/) maybe looks useful
-* Maybe try and incorporate some client-side machine learning? (If thats a thing)
-* Make a little logo for favicon and home button
-* Thinking of opting out of boostrap to try and style my own components
-    * Mainly so I can learn a bit more CSS than just relying on bootstrap theme + components.
-    * Going to go with [Styled Components](https://www.styled-components.com)
-    * [Styled components talk](https://www.youtube.com/watch?v=pHHsSkkjQns)
-* Dockerize dev deployment so that it hot reloads
-    * ./script/deploy -p
+    * Instead of CSS, use themes
+    * Make a global react context which can be used for some cool effects
+* Maybe try and incorporate some client-side machine learning?
+* ~~Make a little logo for favicon and home button~~
+* ~~Thinking of opting out of boostrap to try and style my own components~~
+    * ~~Mainly so I can learn a bit more CSS than just relying on bootstrap theme + components.~~
+    * Went with [Styled Components](https://www.styled-components.com)
 * ~~Make it routable locally without going to localhost:8000~~
 * Look into hosting via an s3 bucket
-* Figure out the best file structure for styled components
-* Figure out the main layout so it's designed for adding new pages
-* Fix the width and height being slighly too big
-* Write a blurb about myself
+* ~~Figure out the best file structure for styled components~~
+    * Not sure if it's the best but it works
+* ~~Figure out the main layout so it's designed for adding new pages~~
+* ~~Fix the width and height being slighly too big~~
+* ~~Write a blurb about myself~~
+    * Improve blurb about myself
 * Actually have a proper landing page
 * Write a blog post about making a static site for AWS
 * Switch the theme to use a react context
-* Scale font according to screensize
+* ~~Scale font according to screensize~~
+    * Still need to scale header text properly
+    * Still need to scale my about me photo properly
 
 ## ~~Framework Planning~~
 * ~~[Next JS](https://nextjs.org/)~~
@@ -57,7 +58,8 @@ All commands are run through npm, the commands are explained below. Call with `n
     * going to go with Gatsby
 
 ## Useful Links
-* [Gatsby Typography](https://www.gatsbyjs.org/docs/typography-js/) - Plugin for controlling fonts for the site.
+* ~~[Gatsby Typography](https://www.gatsbyjs.org/docs/typography-js/) - Plugin for controlling fonts for the site.~~
+    * Removed, just using a style component that adds default styling to page body
 * Colours:
     * Gunmetal - #292F36
     * Magic Mint - #A1FCDF
