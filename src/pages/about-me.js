@@ -12,7 +12,7 @@ import DefaultPaddingContainer from '../components/Style/DefaultPaddingContainer
 import Emoji from '../components/Style/Emoji'
 
 const aboutMeTheme = {
-  backgroundColour: '#FF8552',
+  backgroundColour: '#C4F5FC',
   headerFontColour: '#39393A',
   textFontColour: '#39393A',
 }
